@@ -1,0 +1,94 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 24px;
+  background-color: #f5f5f5;
+  z-index: 2;
+  box-shadow: 0px 0px 10px #a5a5a5;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#content {
+  margin-top: 84px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+.event {
+  position: relative;
+  border: 3px solid #dbdbdb;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 16px;
+}
+
+.organizer, .description, .date, .primary, .secondary {
+  margin-top: 8px;
+}
+
+.title {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.date {
+  position: absolute;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 16px;
+  top: 16px;
+}
+
+.primary, .secondary {
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.primary {
+  background-color: #0465cc;
+  color: #ffffff;
+  border: 2px solid #0465cc;
+}
+
+.secondary {
+  background-color: #ffffff;
+  color: #0465cc;
+  border: 2px solid #0465cc;
+}
+
+.section:first-child > .events > .event > .secondary {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+.info {
+  position: fixed;
+  z-index: 2;
+  right: 24px;
+  bottom: 24px;
+  padding: 16px;
+  width: 150px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  background-color: #f9fad2;
+  border: 2px solid #f9fa20;
+  box-shadow: 0px 0px 10px #a5a5a5;
+}/*# sourceMappingURL=zad_03.css.map */

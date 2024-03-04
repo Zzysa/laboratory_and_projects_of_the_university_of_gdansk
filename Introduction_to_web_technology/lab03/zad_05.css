@@ -1,0 +1,22 @@
+.content {
+    > div:nth-child(2) {
+        color: blue;
+
+        > div:first-child {
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        > div:nth-child(2) > div:first-child {
+            color: red;
+            text-transform: uppercase;
+            line-height: 32px;
+        }
+    }
+
+    > div:last-child > div:last-child > div:last-child {
+        text-decoration: underline;
+        font-style: italic;
+    }
+}
+

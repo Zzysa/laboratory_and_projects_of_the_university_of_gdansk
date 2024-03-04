@@ -1,0 +1,17 @@
+ul {
+    font-weight: normal;
+    list-style-type: disc;
+    color: red;
+}
+
+ul > li > ul {
+    font-weight: bold;
+    list-style-type: circle;
+    color: green;
+}
+
+ul > li > ul > li > ul {
+    font-weight: normal;
+    list-style-type: square;
+    color: blue;
+}

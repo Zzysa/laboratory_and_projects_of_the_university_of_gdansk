@@ -1,0 +1,32 @@
+.box:nth-child(3n+1) {
+  background-color: #d3d3d3;
+}
+
+.box:nth-child(3n+2) {
+  background-color: #808080;
+}
+
+.box:nth-child(3n+3) {
+  background-color: #a9a9a9;
+}
+
+#outer {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-size: 16px;
+}/*# sourceMappingURL=zad_03.css.map */

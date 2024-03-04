@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+  background-color: #464646;
+  color: grey;
+}
+
+.nav {
+  background-color: #2f2f2f;
+}
+.nav li:first-child {
+  float: left;
+}
+.nav li {
+  float: right;
+}
+.nav .title {
+  padding: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+.nav .title .title_text {
+  color: #ffffff;
+  font-size: 24px;
+}
+.nav .title .title_text span {
+  color: orangered;
+}
+.nav .title .subtitle_text {
+  color: grey;
+  font-size: 12px;
+}
+.nav ul {
+  list-style-type: none;
+}
+.nav a, .nav .space {
+  padding-right: 32px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: block;
+  text-align: center;
+  color: grey;
+}
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav a:hover {
+  color: #ffffff;
+}
+
+.nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  bottom: 0;
+}
+.main #foggy, .main #valley {
+  position: absolute;
+  margin: auto;
+  margin-top: 100px;
+  border: 24px solid #2f2f2f;
+}
+.main #valley {
+  width: 250px;
+  height: 300px;
+  left: 0;
+  top: 0;
+}
+.main #foggy {
+  width: 300px;
+  height: 200px;
+  left: 250px;
+  top: 120px;
+  z-index: 2;
+}
+.main .title {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 150px;
+  left: 450px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 24px;
+  font-size: 32px;
+}
+.main .text {
+  position: absolute;
+  width: 180px;
+  height: 300px;
+  top: 210px;
+  left: 615px;
+  line-height: 20px;
+  font-size: 10px;
+}
+.main .text #link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}/*# sourceMappingURL=zad_04.css.map */

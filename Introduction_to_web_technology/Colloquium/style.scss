@@ -1,0 +1,250 @@
+$colors: lightblue, lightcoral, lightsteelblue, lightgreen, lightsalmon, lightslategrey, lightgray, lightpink, lightseagreen;
+
+@for $i from 1 through length($colors) {
+  .photo:nth-child(#{$i}) {
+    background-color: nth($colors, $i);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(28, 30, 33);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  width: 2/3*100%; 
+  margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    margin: 16px auto;
+
+    > .change-photo {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background-color: #008081;
+      border: 10px solid #242527;
+
+      > .fas {
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+
+        border: 10px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+      }
+    }
+  
+  > .name {
+    width: fit-content;
+    align-self: flex-end;
+
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.menu {
+  background-color: #242527;
+  display: flex;
+  border-radius: 8px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+
+  li:hover {
+    border-radius: 8px;
+    background-color: #1d1e22;
+  }
+
+  > li {
+    width: fit-content;
+    margin-left: 16px; 
+    list-style: none;
+    padding: 8px 12px;
+
+    > a {
+      color: lightgray;
+      text-decoration: none;
+    }
+  } 
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+
+  > .btn {
+    padding: 8px 12px;
+    margin: 8px 8px 8px 0;
+    border-radius: 8px;
+
+    background-color: #3a3b3d;
+    color: white;
+    border: 0;
+    font-size: medium; 
+  }
+
+  > .btn:hover {
+    background-color: #1d1e22;
+  }
+}
+
+.container {
+  margin: 16px auto;
+  height: fit-content;
+  display: flex;
+  color: white;
+
+  > .left {
+    position: sticky;
+    top: 16px;
+    height: fit-content;
+    width: 40%;
+    margin-right: 16px;
+
+    > .box {
+      background-color: #242527;
+      border-radius: 8px;
+      padding: 16px; 
+    }
+
+    > .box > .photos {
+      display: flex;
+      align-content: stretch;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+
+      > .photo {
+        flex: calc(33.33% - 8px);
+        height: 140px;
+        border-radius: 8px;
+        font-size: 0;
+      }
+
+      .photo:hover {
+          filter: brightness(50%); 
+          font-size: x-large;
+          color: white;
+          
+          display: flex;
+          align-items: center; 
+          justify-content: center;
+      }
+    }
+
+    > .footer > ul {
+      margin-top: 16px;
+      display: flex;
+      flex: calc(1/3*100%);
+      font-size: small;
+      list-style: none;
+
+      > li {
+        margin-right: 4px;
+      }
+    } 
+  }
+}
+
+.right {
+  flex: 1;
+  height: fit-content;
+
+  > .box {
+    background-color: #242527;
+    border-radius: 8px;
+    padding: 24px 0;
+    margin-bottom: 16px;
+
+    > .photos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px; 
+
+      > .photo {
+        background-color: #b0b3b8;
+        height: 200px;
+      }
+    }
+    
+    > p {
+      padding: 0 16px 16px 16px;
+    }
+
+    > h3 {
+      padding: 0 16px; 
+      margin-bottom: 16px;
+    }
+
+    > a {
+      color: white;
+      margin-left: 16px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+
+  > .box:nth-child(1) > .photos {
+
+    @for $i from 1 through 3 {
+      > .photo:nth-child(#{$i}) {
+        width: calc(1/3*100% - 2px);
+      }
+    }
+
+    @for $i from 4 through 5 {
+      > .photo:nth-child(#{$i}) {
+        width: calc(1/2*100% - 2px);
+      }
+    }
+  }
+
+  > .box:nth-child(3) > .photos {
+
+    @for $i from 1 through 3 {
+      > .photo:nth-child(#{$i}) {
+        width: calc(1/3*100% - 2px);
+      }
+    }
+
+    > .photo:nth-child(4) {
+      width: 100%;
+    }
+  }
+
+  > .box:nth-child(4) > .photos {
+
+    > .photo {
+      width: 100%;
+    }
+  }
+
+  > .box:last-child {
+    text-align: center;
+    padding: 12px 0;
+
+    > p {
+      padding: 0;
+    }
+  }
+
+  > .box:last-child:hover {
+    background-color: #778898;
+  }
+}

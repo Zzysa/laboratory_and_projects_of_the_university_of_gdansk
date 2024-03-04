@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+header {
+  color: white;
+  background-image: url("foggy.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+header > .box {
+  text-align: center;
+}
+header > .box > .title {
+  font-weight: bold;
+  margin: 90px 0 16px 0;
+  font-size: xx-large;
+}
+header > .box > .description {
+  padding-bottom: 90px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.4);
+}
+.nav > .nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
+  list-style: none;
+}
+.nav > .nav-items > li {
+  padding: 16px 0 16px 0;
+}
+.nav > .header {
+  font-weight: bold;
+  padding: 16px 0 16px 16px;
+}
+.nav > .box {
+  text-align: center;
+}
+.nav > .box > .title {
+  font-weight: bold;
+}
+
+.items {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 932px;
+  margin: 32px auto;
+}
+.items > .item {
+  width: 300px;
+  height: 450px;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+.items > .item > .image {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  background-color: #8d9073;
+}
+.items > .item > .image > .date {
+  right: 8px;
+  bottom: 8px;
+  position: absolute;
+  font-size: small;
+  color: white;
+}
+.items > .item > .title {
+  padding: 16px;
+  font-weight: bold;
+  font-size: small;
+}
+.items > .item > .description {
+  font-size: small;
+  padding: 0 16px 16px 16px;
+}
+
+.item:nth-child(n+10) {
+  flex: 1;
+  height: 390px;
+}
+.item:nth-child(n+10) > .image {
+  width: 100%;
+}/*# sourceMappingURL=zad_04.css.map */

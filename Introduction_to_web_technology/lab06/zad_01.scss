@@ -1,0 +1,24 @@
+.content {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.color-plane {
+    padding-left: 12px;
+    padding-top: 12px;
+    height: 100px;
+    color: white;
+    border: 1px black solid;
+    font-size: large;
+    text-shadow: 3px 3px 3px grey;
+}
+
+.color-plane:nth-child(odd) {
+    background-color: #ffe3b4;
+}
+
+.color-plane:nth-child(even) {
+    background-color: #deb887;
+}

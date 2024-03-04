@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 1rem;
+}
+
+.item {
+  background-color: #ede7a9;
+  border: 1px black solid;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  padding: 0.5rem 0;
+}
+
+.item9 {
+  background-color: #e8977a;
+  grid-column: span 2;
+}
+
+.item11 {
+  background-color: #e5e6fa;
+  grid-row: span 4;
+}
+
+.item16 {
+  background-color: #aeeeee;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.item29 {
+  background-color: #d1b48c;
+  grid-column: span 4;
+}/*# sourceMappingURL=zad_02.css.map */
