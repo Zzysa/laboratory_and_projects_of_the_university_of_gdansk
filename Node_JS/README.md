@@ -5,4 +5,6 @@ In this repository are stored my labs "Node_JS"
 |----------|----------|
 | lab01    | Loops, conditional statement, console |
 | lab02    | Objects, arrays | 
+| lab03    | Variable types and working with them | 
+
 

@@ -1,0 +1,1 @@
+Here you can find my labs and projects on the syllabus of the University of Gdansk, structured by subject. Inside each subject are my labs with a text file describing what I learned in each of the laboratories. 
