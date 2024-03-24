@@ -7,6 +7,8 @@ In this repository are stored my labs "Scala"
 | lab02    | Recursion, output |
 | lab03    | Tail recursion | 
 | lab04    | Pattern matching, Some Option | 
+| lab05    | Function in function | 
+
 
 
 
