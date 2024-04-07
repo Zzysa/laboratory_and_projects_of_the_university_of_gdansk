@@ -8,6 +8,8 @@ In this repository are stored my labs "Scala"
 | lab03    | Tail recursion | 
 | lab04    | Pattern matching, Some Option | 
 | lab05    | Function in function | 
+| lab06    | Set(), built-in functions for Sets and Lists | 
+
 
 
 
