@@ -8,6 +8,8 @@ In this repository are stored my labs "Node_JS"
 | lab03    | Variable types and working with them | 
 | lab04    | Lambda functions, built-in functions, IIFE and Function Factories | 
 | lab05    | Work with objects | 
+| lab06    | Library "Lodash" | 
+
 
 
 
