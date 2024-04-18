@@ -9,6 +9,8 @@ In this repository are stored my labs "Node_JS"
 | lab04    | Lambda functions, built-in functions, IIFE and Function Factories | 
 | lab05    | Work with objects | 
 | lab06    | Library "Lodash" | 
+| lab07    | Objects, Objects's methods, Classes, constructions | 
+
 
 
 
