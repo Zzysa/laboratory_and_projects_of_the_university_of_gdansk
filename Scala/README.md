@@ -10,6 +10,9 @@ In this repository are stored my labs "Scala"
 | lab05    | Function in function | 
 | lab06    | Set(), built-in functions for Sets and Lists | 
 | lab07    | Work with Set() and built-in functions for Sets and Lists | 
+| lab08    | Work with built-in functions | 
+| lab09    | Work with built-in functions |
+
 
 
 
