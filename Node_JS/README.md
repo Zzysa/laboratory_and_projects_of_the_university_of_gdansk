@@ -10,6 +10,8 @@ In this repository are stored my labs "Node_JS"
 | lab05    | Work with objects | 
 | lab06    | Library "Lodash" | 
 | lab07    | Objects, Objects's methods, Classes, constructions | 
+| lab08    | SetInterval(), setTimeout(), clearInterval() | 
+
 
 
 
